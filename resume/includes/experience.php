@@ -2,6 +2,16 @@
 
 $experience = array(
 	array(
+		"company" => "The Adsmith",
+		"title" => "Full Stack Developer",
+		"dates" => "May 2015 - Present",
+		"summary" => "",
+		"roles" => array(
+			
+		)
+	),
+
+	array(
 		"company" => "X-Team",
 		"title" => "Developer Lead",
 		"dates" => "June 2013 - December 2014",
