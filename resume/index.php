@@ -1,33 +1,33 @@
-<? $basePath = "." ?>
-<? require($basePath . "/partials/top.php"); ?>
-<? require($basePath . "/includes/experience.php"); ?>
+<?php $basePath = "." ?>
+<?php require($basePath . "/partials/top.php"); ?>
+<?php require($basePath . "/includes/experience.php"); ?>
 
 <section id="skills">
 	<h2>Expertise</h2>
 	<ol class="main-list">
-		<? foreach($skills as $skill) { ?>
-			<li class="tag"><a href="portfolio/#<?= $skill ?>"><?= $skill ?></a></li>
-		<? } ?>
+		<?php foreach($skills as $skill) { ?>
+			<li class="tag"><a href="portfolio/#<?php echo $skill ?>"><?php echo $skill ?></a></li>
+		<?php } ?>
 	</ol>
 </section>
 
 <section id="experience">
 	<h2>Experience</h2>
 	<ol class="main-list">
-		<? foreach($experience as $e) { ?>
+		<?php foreach($experience as $e) { ?>
 			<li>
-				<span class="company"><?= $e['company']?> <span class="title"><?= $e['title'] ?></span></span>
-				<span class="dates"><?= $e['dates'] ?></span>
+				<span class="company"><?php echo $e['company']?> <span class="title"><?php echo $e['title'] ?></span></span>
+				<span class="dates"><?php echo $e['dates'] ?></span>
 				<p class="details">
-					<?= $e['summary'] ?>
+					<?php echo $e['summary'] ?>
 				</p>
 				<ul class="roles">
-					<? foreach($e['roles'] as $role) { ?>
-						<li><?= $role ?></li>
-					<? } ?>
+					<?php foreach($e['roles'] as $role) { ?>
+						<li><?php echo $role ?></li>
+					<?php } ?>
 				</ul>
 			</li>
-		<? } ?>
+		<?php } ?>
 	</ol>
 </section>
 
@@ -63,4 +63,4 @@
 	</ul>
 </section>
 
-<? require($basePath . "/partials/bottom.php"); ?>
+<?php require($basePath . "/partials/bottom.php"); ?>

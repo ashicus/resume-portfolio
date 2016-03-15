@@ -1,34 +1,34 @@
-<? $basePath = "../" ?>
-<? require($basePath . "/partials/top.php"); ?>
+<?php $basePath = "../" ?>
+<?php require($basePath . "/partials/top.php"); ?>
 
 <ul id="projects">
-<? foreach($projects as $i => $project) { ?>
+<?php foreach($projects as $i => $project) { ?>
 	<li class="project">
 		<ol class="images">
-			<? foreach($project['images'] as $image) { ?>
+			<?php foreach($project['images'] as $image) { ?>
 				<li><img src="<?= $image ?>" alt="<?= $project['title'] ?>" /></li>
-			<? } ?>
+			<?php } ?>
 		</ol>
 
 		<h2><?= $project['title'] ?></h2>
 
-		<? if($project['link']) { ?>
+		<?php if($project['link']) { ?>
 			<p class="link">
 				<a href="<?= $project['link'] ?>" target="_blank">Visit &rarr;</a>
 			</p>
-		<? } ?>
+		<?php } ?>
 
 		<ul class="tags clear">
-			<? foreach($project['tags'] as $tag) { ?>
+			<?php foreach($project['tags'] as $tag) { ?>
 				<li class="tag <?= $tag ?>"><a href="#<?= $tag ?>"><?= $tag ?></a></li>
-			<? } ?>
+			<?php } ?>
 		</ul>
 
 		<div class="description clear">
 			<?= trim($project['description']) ?>
 		</div>
 	</li>
-<? } ?>
+<?php } ?>
 </ul>
 
-<? require($basePath . "/partials/bottom.php"); ?>
+<?php require($basePath . "/partials/bottom.php"); ?>
