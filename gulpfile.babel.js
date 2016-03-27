@@ -41,6 +41,9 @@ function clean(done) {
 // Copy files out of the assets folder
 // This task skips over the "img", "js", and "scss" folders, which are parsed separately
 function copy() {
+  gulp.src(PATHS.config)
+    .pipe(gulp.dest(PATHS.dist));
+
   return gulp.src(PATHS.assets)
     .pipe(gulp.dest(PATHS.dist + '/assets'));
 }
@@ -125,6 +128,7 @@ function server(done) {
 
 // Watch for changes to static assets, pages, Sass, and JavaScript
 function watch() {
+  gulp.watch(PATHS.config, copy);
   gulp.watch(PATHS.assets, copy);
   gulp.watch('src/pages/**/*.html', gulp.series(pages, browser.reload));
   gulp.watch('src/{layouts,partials}/**/*.html', gulp.series(resetPages, pages, browser.reload));

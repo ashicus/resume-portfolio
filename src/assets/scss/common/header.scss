@@ -4,6 +4,10 @@ header {
     .title {
         font-weight: bold;
         border-bottom: rem-calc(1) solid #999;
+
+        a {
+            color: inherit;
+        }
     }
 
     .photo {
