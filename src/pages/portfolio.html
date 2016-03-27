@@ -1,31 +1,50 @@
 <section id="portfolio">
-    <ul>
-        {{#each portfolio}}
-        	<li class="project">
-        		<ol class="images">
-                    {{#each this.images}}
-        				<li><img src="{{ root }}assets/img/portfolio/{{ this }}" alt="{{ this.title }}" /></li>
-        			{{/each}}
-        		</ol>
+    <div class="row">
+        <div class="column large-12">
+            <ul class="projects">
+                {{#each portfolio}}
+                	<li class="project">
+                        <div class="orbit" data-orbit data-auto-play="false">
+                    		<ol class="images orbit-container">
+                                <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+                                <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
 
-        		<h2>{{ this.title }}</h2>
+                                {{#each this.images}}
+                    				<li class="image orbit-slide {{#unless @index}}is-active{{/unless}}"><img src="{{ root }}assets/img/portfolio/{{ this }}" alt="{{ this.title }}" /></li>
+                    			{{/each}}
+                    		</ol>
 
-    			<p class="link">
-    				<a href="{{ this.link }}" target="_blank">Visit &rarr;</a>
-    			</p>
+                            <nav class="orbit-bullets">
+                                {{#each this.images}}
+                    				<button data-slide="{{@index}}" class="{{#unless @index}}is-active{{/unless}}"><span class="show-for-sr">First slide details.</span></button>
+                    			{{/each}}
+                            </nav>
+                        </div>
 
-        		<ul class="tags">
-        			{{#each this.tags}}
-        				<li class="tag {{ this }}"><a href="#{{ this }}">{{ this }}</a></li>
-        			{{/each}}
-        		</ul>
+                		<h2 class="title">{{ this.title }}</h2>
 
-        		<div class="description clear">
-        			{{#each this.description}}
-                        {{{ this }}}
-                    {{/each}}
-        		</div>
-        	</li>
-        {{/each}}
-    </ul>
+            			<p class="link">
+            				<a href="{{ this.link }}" target="_blank">Visit &rarr;</a>
+            			</p>
+
+                        <div class="clearfix">
+
+                        </div>
+
+                		<ul class="tags">
+                			{{#each this.tags}}
+                				<li class="tag {{ this }}"><a href="#{{ this }}">{{ this }}</a></li>
+                			{{/each}}
+                		</ul>
+
+                		<div class="description clear">
+                			{{#each this.description}}
+                                {{{ this }}}
+                            {{/each}}
+                		</div>
+                	</li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
 </section>

@@ -1,90 +1,90 @@
-<section id="skills">
+<section class="resume-section" id="skills">
     <div class="row">
         <div class="column large-2">
             <h2>Expertise</h2>
         </div>
 
         <div class="column large-10">
-            <ol class="main-list">
+            <ul class="main-list skills">
                 {{#each skills}}
                     <li class="skill"><a href="#{{ this.slug }}">{{ this.name }}</a></li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="resume-section" id="experience">
+    <div class="row">
+        <div class="column large-2">
+	        <h2>Experience</h2>
+        </div>
+
+        <div class="column large-10">
+        	<ol class="main-list experience">
+                {{#each experience}}
+                    <li class="position">
+                        <span class="company">{{ this.company }} <span class="title">{{ this.title }}</span></span>
+                        <span class="dates">{{ this.dates }}</span>
+                        <p class="details">{{ this.summary }}</p>
+                        <ul class="roles">
+                            {{#each this.roles}}
+                                <li>{{ this }}</li>
+                            {{/each}}
+                        </ul>
+                    </li>
                 {{/each}}
             </ol>
         </div>
     </div>
 </section>
 
-<section id="experience">
-    <div class="row">
-        <div class="column large-2">
-	        <h2>Experience</h2>
-        </div>
-    </div>
-
-    <div class="column large-10">
-    	<ol class="main-list">
-            {{#each experience}}
-                <li>
-                    <span class="company"{{ this.company }} <span class="title">{{ this.title }}</span></span>
-                    <span class="dates">{{ this.dates }}</span>
-                    <p class="details">{{ this.summary }}</p>
-                    <ul class="roles">
-                        {{#each this.roles}}
-                            {{ this }}
-                        {{/each}}
-                    </ul>
-                </li>
-            {{/each}}
-        </ol>
-    </div>
-</section>
-
-<section id="education">
+<section class="resume-section" id="education">
     <div class="row">
         <div class="column large-2">
 	        <h2>Education</h2>
         </div>
-    </div>
 
-    <div class="column large-10">
-    	<ol class="main-list">
-            {{#each education}}
-                <li>
-                    <span class="institution">{{ this.institution }} <span class="degree">{{ this.degree }}</span></span>
-        			<span class="dates">{{ this.dates }}</span>
-                </li>
-            {{/each}}
-    	</ol>
+        <div class="column large-10">
+        	<ol class="main-list education">
+                {{#each education}}
+                    <li class="degree clearfix">
+                        <span class="institution">{{ this.institution }} <span class="degree-type">{{ this.degree }}</span></span>
+            			<span class="dates">{{ this.dates }}</span>
+                    </li>
+                {{/each}}
+        	</ol>
+        </div>
     </div>
 </section>
 
-<section id="references">
+<section class="resume-section" id="references">
     <div class="row">
         <div class="column large-2">
 	        <h2>References</h2>
         </div>
-    </div>
 
-    <div class="column large-10">
-    	<ul class="main-list">
-    		<li>Available upon request</li>
-    	</ul>
+        <div class="column large-10">
+        	<ul class="main-list">
+        		<li>Available upon request</li>
+        	</ul>
+        </div>
     </div>
 </section>
 
-<section id="elsewhere">
+<section class="resume-section" id="elsewhere">
     <div class="row">
         <div class="column large-2">
 	        <h2>Elsewhere</h2>
         </div>
-    </div>
 
-    <div class="column large-10">
-    	<ul class="main-list">
-    		<li><a href="/resume/portfolio">Portfolio</a></li>
-    		<li class="stack-overflow"><a href="http://stackoverflow.com/users/288069/ashicus">Stack Overflow</a></li>
-    		<li class="github"><a href="https://github.com/ashicus">GitHub</a></li>
-    		<li class="linkedin"><a href="http://www.linkedin.com/profile/view?id=16687579">LinkedIn</a></li>
-    	</ul>
+        <div class="column large-10">
+        	<ul class="main-list">
+        		<li><a href="/resume/portfolio">Portfolio</a></li>
+        		<li class="stack-overflow"><a href="http://stackoverflow.com/users/288069/ashicus" target="_blank">Stack Overflow</a></li>
+        		<li class="github"><a href="https://github.com/ashicus" target="_blank">GitHub</a></li>
+        		<li class="linkedin"><a href="https://www.linkedin.com/in/ashwhite" target="_blank">LinkedIn</a></li>
+        	</ul>
+        </div>
     </div>
 </section>

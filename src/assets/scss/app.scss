@@ -49,4 +49,9 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
-@import 'common';
+@import 'common/base';
+@import 'common/typography';
+@import 'common/header';
+@import 'common/footer';
+@import 'components/resume';
+@import 'components/portfolio';

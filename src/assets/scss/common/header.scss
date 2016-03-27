@@ -1,0 +1,44 @@
+header {
+    margin-top: 1.5rem;
+
+    .title {
+        font-weight: bold;
+        border-bottom: rem-calc(1) solid #999;
+    }
+
+    .photo {
+        float: right;
+        padding: rem-calc(6);
+        background-color: #efefef;
+        border: rem-calc(1) solid #ccc;
+        border-radius: rem-calc(4);
+        transform: rotate(-3deg);
+        transition: transform 0.3s;
+        margin-top: rem-calc(-50);
+        margin-right: rem-calc(-14);
+        margin-bottom: 2rem;
+        box-shadow: 0px 0px 3px #bbb;
+
+        &:hover {
+            transform: rotate(-5deg);
+        }
+
+        img {
+            display: block;
+            width: rem-calc(150);
+            border-radius: rem-calc(2);
+        }
+    }
+
+    .contact {
+        font-family: $body-serif-font-family;
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+    .header-label {
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,12 @@
+h1, h2, h3 {
+    text-shadow: rem-calc(1) rem-calc(1) #fff;
+}
+
+h2 {
+    font-family: $body-serif-font-family;
+    font-weight: bold;
+}
+
+p, li {
+    text-shadow: 1px 1px #fff;
+}
