@@ -1,0 +1,31 @@
+<section id="portfolio">
+    <ul>
+        {{#each portfolio}}
+        	<li class="project">
+        		<ol class="images">
+                    {{#each this.images}}
+        				<li><img src="{{ root }}assets/img/portfolio/{{ this }}" alt="{{ this.title }}" /></li>
+        			{{/each}}
+        		</ol>
+
+        		<h2>{{ this.title }}</h2>
+
+    			<p class="link">
+    				<a href="{{ this.link }}" target="_blank">Visit &rarr;</a>
+    			</p>
+
+        		<ul class="tags">
+        			{{#each this.tags}}
+        				<li class="tag {{ this }}"><a href="#{{ this }}">{{ this }}</a></li>
+        			{{/each}}
+        		</ul>
+
+        		<div class="description clear">
+        			{{#each this.description}}
+                        {{{ this }}}
+                    {{/each}}
+        		</div>
+        	</li>
+        {{/each}}
+    </ul>
+</section>

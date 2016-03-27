@@ -1,0 +1,42 @@
+[
+    {
+        "name": "PHP",
+        "slug": "php"
+    },
+    {
+        "name": "MySQL",
+        "slug": "mysql"
+    },
+    {
+        "name": "HTML5",
+        "slug": "html5"
+    },
+    {
+        "name": "JavaScript",
+        "slug": "javascript"
+    },
+    {
+        "name": "CSS3",
+        "slug": "css3"
+    },
+    {
+        "name": "Sass / Less",
+        "slug": "sass-less"
+    },
+    {
+        "name": "Responsive",
+        "slug": "responsive"
+    },
+    {
+        "name": "CMS",
+        "slug": "cms"
+    },
+    {
+        "name": "Adobe CC",
+        "slug": "adobe-cc"
+    },
+    {
+        "name": "UNIX",
+        "slug": "unix"
+    }
+]
