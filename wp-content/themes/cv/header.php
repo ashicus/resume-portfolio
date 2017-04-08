@@ -20,6 +20,7 @@ global $theme_custom_settings;
 	?>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="Description" content="Ash White is a software engineer located in Athens, GA." >
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
@@ -32,14 +33,14 @@ global $theme_custom_settings;
 	<!--[if lt IE 9]>
 		<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
 	<![endif]-->
-	
+
 	<?php
 	// Theme customizer settings
 	$theme_custom_settings = array(
 		'theme_style' => getValueGPC('theme_style', get_theme_option('theme_style'))
 	);
 	$theme_custom_settings['theme_style'] = !isset($_GET['prn']) && my_strtolower($theme_custom_settings['theme_style']) == 'dark' ? 'dark' : 'light';
-	
+
 	// AJAX Queries setiings
 	global $ajax_nonce, $ajax_url;
 	$ajax_nonce = wp_create_nonce('ajax_nonce');
@@ -71,7 +72,7 @@ global $theme_custom_settings;
         <?php do_action( 'before' ); ?>
         <header id="header" class="site_header" role="banner">
 			<?php
-			if (get_theme_option("social_links_in_header") == "true" ) { 
+			if (get_theme_option("social_links_in_header") == "true" ) {
 				$twitter = get_theme_option("social_links_twitter");
 				$facebook = get_theme_option("social_links_facebook");
 				$rss = get_theme_option("social_links_rss");
@@ -84,7 +85,7 @@ global $theme_custom_settings;
 				$pinterest = get_theme_option("social_links_pinterest");
 				$xing = get_theme_option("social_links_xing");
 				$slide_share = get_theme_option("social_links_slideshare");
-				
+
 				$custom_1_url = get_theme_option("additional_account_url_1");
 				$custom_2_url = get_theme_option("additional_account_url_2");
 				$custom_3_url = get_theme_option("additional_account_url_3");
@@ -105,24 +106,24 @@ global $theme_custom_settings;
 						<?php if ($pinterest) { ?><li class="pin"><a target="_blank" href="<?php echo $pinterest; ?>" class="pin"><?php _e('Pinterst', 'wpspace'); ?></a></li><?php } ?>
 						<?php if ($xing) { ?><li class="xing"><a target="_blank" href="<?php echo $xing; ?>" class="xing"><?php _e('Xing', 'wpspace'); ?></a></li><?php } ?>
 						<?php if ($slide_share) { ?><li class="slide_share"><a target="_blank" href="<?php echo $slide_share; ?>" class="slide_share"><?php _e('Slide Share', 'wpspace'); ?></a></li><?php } ?>
-						
+
 						<?php if(!empty($custom_1_url) && !empty($custom_1_icon)) { ?>
 						<li class="custom"><a target="_blank" href="<?php echo $custom_1_url; ?>"><img src="<?php echo $custom_1_icon; ?>" alt=""></a></li>
 						<?php } ?>
-						
+
 						<?php if(!empty($custom_2_url) && !empty($custom_2_icon)) { ?>
 						<li class="custom"><a target="_blank" href="<?php echo $custom_2_url; ?>"><img src="<?php echo $custom_2_icon; ?>" alt=""></a></li>
 						<?php } ?>
-						
+
 						<?php if(!empty($custom_3_url) && !empty($custom_3_icon)) { ?>
 						<li class="custom"><a target="_blank" href="<?php echo $custom_3_url; ?>"><img src="<?php echo $custom_3_icon; ?>" alt=""></a></li>
 						<?php } ?>
-						
+
 					</ul>
 				</div>
 			<?php } ?>
         </header>
-	
+
 		<?php
 			global $sidebar_position, $sidebar_class, $sidebar_id, $is_resume_page;
 			$type = getBlogType();
@@ -154,13 +155,13 @@ global $theme_custom_settings;
 				$sidebar_position = 'fullwidth';
 			} else if (is_single() || is_page()) {
 				$sidebar_position = my_strtolower(get_theme_option($sidebar_position_prm));
-				if (isset($cat_options[$sidebar_position_prm]) && $cat_options[$sidebar_position_prm]!='' && $cat_options[$sidebar_position_prm]!='default') 
+				if (isset($cat_options[$sidebar_position_prm]) && $cat_options[$sidebar_position_prm]!='' && $cat_options[$sidebar_position_prm]!='default')
 					$sidebar_position = $cat_options[$sidebar_position_prm];
 				$post_position = my_strtolower(get_post_meta(get_the_ID(), 'sidebar_position', true));
 				if ($post_position!='' && $post_position!='default') $sidebar_position = $post_position;
 			} else {
 				$sidebar_position = my_strtolower(get_theme_option($sidebar_position_prm));
-				if (isset($cat_options[$sidebar_position_prm]) && $cat_options[$sidebar_position_prm]!='' && $cat_options[$sidebar_position_prm]!='default') 
+				if (isset($cat_options[$sidebar_position_prm]) && $cat_options[$sidebar_position_prm]!='' && $cat_options[$sidebar_position_prm]!='default')
 					$sidebar_position = $cat_options[$sidebar_position_prm];
 			}
 			if ($sidebar_position == 'fullwidth')	$sidebar_class = 'without_sidebar';
@@ -175,12 +176,12 @@ global $theme_custom_settings;
 				if ($post_sidebar !='' && $post_sidebar!='default')
 					$sidebar_id = $post_sidebar;
 			}
-			if (isset($cat_options[$sidebar_current_prm]) && $cat_options[$sidebar_current_prm]!='' && $cat_options[$sidebar_current_prm]!='default') 
+			if (isset($cat_options[$sidebar_current_prm]) && $cat_options[$sidebar_current_prm]!='' && $cat_options[$sidebar_current_prm]!='default')
 				$sidebar_id = $cat_options[$sidebar_current_prm];
 			if (is_single() && $page_id > 0) {
 				if ($post_sidebar !='' && $post_sidebar!='default')
 					$sidebar_id = $post_sidebar;
 			}
 		?>
-        
+
 	    <div id="main" <?php echo $is_resume_page ? '' : ' class="' . $sidebar_class . '"'; ?>>
