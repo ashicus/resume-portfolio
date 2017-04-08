@@ -16,7 +16,14 @@
 	<ol class="main-list">
 		<?php foreach($experience as $e) { ?>
 			<li>
-				<span class="company"><?php echo $e['company']?> <span class="title"><?php echo $e['title'] ?></span></span>
+				<span class="company">
+					<?php if ($e['company_link']) { ?>
+						<a href="<?php echo $e['company_link']?> "><?php echo $e['company']?></a>
+					<?php } else { ?>
+						<?php echo $e['company']?>
+					<?php } ?>
+					<span class="title"><?php echo $e['title'] ?></span>
+				</span>
 				<span class="dates"><?php echo $e['dates'] ?></span>
 				<p class="details">
 					<?php echo $e['summary'] ?>
@@ -46,20 +53,20 @@
 	</ol>
 </section>
 
-<section id="references">
+<!-- <section id="references">
 	<h2>References</h2>
 	<ul class="main-list">
 		<li>Available upon request</li>
 	</ul>
-</section>
+</section> -->
 
 <section id="elsewhere">
 	<h2>Elsewhere</h2>
 	<ul class="main-list">
-		<li><a href="/resume/portfolio">Portfolio</a></li>
+		<li><a href="<?php echo $basePath ?>/portfolio">Portfolio</a></li>
 		<li class="stack-overflow"><a href="http://stackoverflow.com/users/288069/ashicus">Stack Overflow</a></li>
 		<li class="github"><a href="https://github.com/ashicus">GitHub</a></li>
-		<li class="linkedin"><a href="http://www.linkedin.com/profile/view?id=16687579">LinkedIn</a></li>
+		<li class="linkedin"><a href="https://www.linkedin.com/in/ashwhite/">LinkedIn</a></li>
 	</ul>
 </section>
 

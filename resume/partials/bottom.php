@@ -3,8 +3,8 @@
 		<footer>
 			<p>Hand coded with love by Ash White</p>
 			<p>Valid <a href="http://validator.w3.org/check?uri=referer">HTML5</a> and <a href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fashmwhite.com%2Fresume%2Fcss%2Fstyle.css">CSS</a></p>
-			<p><?php echo date("Y") ?></p>
-			<p>.</p>
+			<p>2015 – <?php echo date("Y") ?></p>
+			<p><span class="fa fa-code"></span></p>
 		</footer>
 	</div>
 
