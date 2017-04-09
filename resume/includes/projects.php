@@ -46,6 +46,87 @@ $projects = array(
 	),
 
 	array(
+		"title" => "Professional Development School District Partnership",
+		"images" => array(
+			"../images/portfolio/pdsd_1.jpg",
+		),
+		"description" => "
+			<p>I provided development and maintenance for fox.com, including CMS integration, responsive design, video streaming, MVPD authentication, advertising, social integration, analytics, and user feedback.</p>
+			<p>In addition to working directly alongside the product teams at Fox and collaborating with the other developers on my team, I worked with other vendors such as Adobe, Hulu, Akamai, and FreeWheel.</p>
+		",
+		"link" => "http://pdsdpartnership.com",
+		"tags" => array("WordPress", "PHP", "HTML", "SASS", "Responsive", "JavaScript", "Photoshop")
+	),
+
+	array(
+		"title" => "Stadion Money Management",
+		"images" => array(
+			"../images/portfolio/stadion_1.jpg",
+			"../images/portfolio/stadion_3.jpg",
+			"../images/portfolio/stadion_2.jpg",
+		),
+		"description" => "
+			<p>I provided development and maintenance for fox.com, including CMS integration, responsive design, video streaming, MVPD authentication, advertising, social integration, analytics, and user feedback.</p>
+			<p>In addition to working directly alongside the product teams at Fox and collaborating with the other developers on my team, I worked with other vendors such as Adobe, Hulu, Akamai, and FreeWheel.</p>
+		",
+		"link" => "http://www.stadionmoney.com",
+		"tags" => array("ExpressionEngine", "PHP", "HTML", "SASS", "Responsive", "JavaScript", "Photoshop")
+	),
+
+	array(
+		"title" => "Jackson EMC Jtoday",
+		"images" => array(
+			"../images/portfolio/jtoday_1.jpg",
+			"../images/portfolio/jtoday_2.jpg",
+		),
+		"description" => "
+			<p>I provided development and maintenance for fox.com, including CMS integration, responsive design, video streaming, MVPD authentication, advertising, social integration, analytics, and user feedback.</p>
+			<p>In addition to working directly alongside the product teams at Fox and collaborating with the other developers on my team, I worked with other vendors such as Adobe, Hulu, Akamai, and FreeWheel.</p>
+		",
+		// "link" => "http://www.stadionmoney.com",
+		"tags" => array("Craft CMS", "PHP", "HTML", "SASS", "Responsive", "JavaScript", "Photoshop")
+	),
+
+	array(
+		"title" => "UGA Institute of Higher Education",
+		"images" => array(
+			"../images/portfolio/ihe_1.jpg",
+		),
+		"description" => "
+			<p>I provided development and maintenance for fox.com, including CMS integration, responsive design, video streaming, MVPD authentication, advertising, social integration, analytics, and user feedback.</p>
+			<p>In addition to working directly alongside the product teams at Fox and collaborating with the other developers on my team, I worked with other vendors such as Adobe, Hulu, Akamai, and FreeWheel.</p>
+		",
+		"link" => "http://ihe.uga.edu",
+		"tags" => array("ExpressionEngine", "PHP", "HTML", "SASS", "Responsive", "JavaScript", "Photoshop")
+	),
+
+	array(
+		"title" => "UGA Department of Academic Enhancement",
+		"images" => array(
+			"../images/portfolio/dae_1.jpg",
+		),
+		"description" => "
+			<p>I provided development and maintenance for fox.com, including CMS integration, responsive design, video streaming, MVPD authentication, advertising, social integration, analytics, and user feedback.</p>
+			<p>In addition to working directly alongside the product teams at Fox and collaborating with the other developers on my team, I worked with other vendors such as Adobe, Hulu, Akamai, and FreeWheel.</p>
+		",
+		"link" => "http://dae.uga.edu",
+		"tags" => array("WordPress", "PHP", "HTML", "SASS", "Responsive", "JavaScript", "Photoshop")
+	),
+
+	array(
+		"title" => "Wildwood Lubbock",
+		"images" => array(
+			"../images/portfolio/dovetail_1.jpg",
+		),
+		"description" => "
+			<p>I provided development and maintenance for fox.com, including CMS integration, responsive design, video streaming, MVPD authentication, advertising, social integration, analytics, and user feedback.</p>
+			<p>In addition to working directly alongside the product teams at Fox and collaborating with the other developers on my team, I worked with other vendors such as Adobe, Hulu, Akamai, and FreeWheel.</p>
+		",
+		"link" => "http://wildwoodlubbock.com",
+		"tags" => array("WordPress", "PHP", "HTML", "SASS", "Responsive", "JavaScript", "Photoshop")
+	),
+
+	array(
 		"title" => "Full Circle Real Estate Group",
 		"images" => array(
 			"../images/portfolio/full_circle_1.jpg",

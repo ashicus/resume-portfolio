@@ -18,7 +18,7 @@
 			<li>
 				<span class="company">
 					<?php if ($e['company_link']) { ?>
-						<a href="<?php echo $e['company_link']?> "><?php echo $e['company']?></a>
+						<a href="<?php echo $e['company_link']?>" target="_blank"><?php echo $e['company']?></a>
 					<?php } else { ?>
 						<?php echo $e['company']?>
 					<?php } ?>

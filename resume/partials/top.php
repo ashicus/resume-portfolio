@@ -7,7 +7,7 @@
 	<!--
 
 		Yay, you made it to the source!
-		Here's a special 🎵 musical treat 🎵 just for you:
+		Here's a 🎵 special treat 🎵 just for you:
 		http://bit.ly/IqT6zt
 
 	-->
@@ -50,16 +50,13 @@
 
 				<p class="info">
 					<span class="label">Location</span>
-					<a href="https://www.google.com/maps/place/Athens,+GA">Athens, GA</a>
+					<a href="https://www.google.com/maps/place/Athens,+GA/@33.9462956,-83.3832952,14z/data=!4m5!3m4!1s0x88f66d19b4b433b9:0x4d747202d69d617c!8m2!3d33.9519347!4d-83.357567" target="_blank">Athens, GA</a>
 				</p>
 
 				<div id="summary">
 					<p>
-						Full stack software engineer with 15 years of experience designing, developing, testing, and debugging medium to large scale web applications.
-					</p>
-					<p>
-						My goal is to continue my never-ending adventures in the world of creating great things.
-						<span id="portfolio-link">Check out my <a href="/resume/portfolio">portfolio</a>.</span>
+						Full stack software engineer with 15 years of experience designing, developing, testing, and
+						debugging medium to large scale web applications.
 					</p>
 				</div>
 			</header>

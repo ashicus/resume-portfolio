@@ -10,22 +10,24 @@
 			<?php } ?>
 		</ol>
 
-		<h2><?= $project['title'] ?></h2>
+		<div class="inner">
+			<h2><?= $project['title'] ?></h2>
 
-		<?php if($project['link']) { ?>
-			<p class="link">
-				<a href="<?= $project['link'] ?>" target="_blank">Visit &rarr;</a>
-			</p>
-		<?php } ?>
-
-		<ul class="tags clear">
-			<?php foreach($project['tags'] as $tag) { ?>
-				<li class="tag <?= $tag ?>"><a href="#<?= $tag ?>"><?= $tag ?></a></li>
+			<?php if($project['link']) { ?>
+				<p class="link">
+					<a href="<?= $project['link'] ?>" target="_blank">Visit <span class="fa fa-long-arrow-right" aria-hidden="true"></span></a>
+				</p>
 			<?php } ?>
-		</ul>
 
-		<div class="description clear">
-			<?= trim($project['description']) ?>
+			<ul class="tags clear">
+				<?php foreach($project['tags'] as $tag) { ?>
+					<li class="tag <?= $tag ?>"><a href="#<?= $tag ?>"><?= $tag ?></a></li>
+				<?php } ?>
+			</ul>
+
+			<div class="description clear">
+				<?= trim($project['description']) ?>
+			</div>
 		</div>
 	</li>
 <?php } ?>

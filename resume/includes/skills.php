@@ -7,8 +7,9 @@ $skills = array(
 	"JavaScript",
 	"CSS3",
 	"Sass / Less",
+	"Node.js",
 	"Responsive Design",
 	"CMS Development",
 	"Adobe CC",
-	"UNIX",
+	"UNIX / Linux",
 );

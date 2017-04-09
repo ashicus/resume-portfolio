@@ -30,8 +30,8 @@ input, select {vertical-align:middle;}
 
 /* custom global html element selectors */
 
-html								{ -webkit-font-smoothing: antialiased; overflow: auto; }
-body								{ font-family: 'Roboto Slab', serif; font-weight: 700; color: #333; background-image: url(../images/bg.jpg); }
+html								{ -webkit-font-smoothing: antialiased; overflow: auto; box-sizing: border-box; }
+body								{ font-family: 'Roboto Slab', serif; font-weight: 700; color: #333; background-image: url(../images/bg.png);  }
 img									{ -ms-interpolation-mode: bicubic; }
 td, td img							{ vertical-align: top; }
 b, strong							{ font-weight: bold; }
@@ -67,7 +67,7 @@ section .main-list li				{ list-style: none; }
 #skills								{ padding-top: 36px; }
 #skills ol							{  }
 li.tag								{
-	list-style: none; display: block; float: left; margin: 0 12px 12px 0; background: #999; border: 1px solid #a3bde9; border-radius: 20px;
+	list-style: none; display: block; float: left; margin: 6px 12px 6px 0; background: #999; border: 1px solid #a3bde9; border-radius: 20px;
 	background-color: #DCE6F7;
 	background-image: -ms-linear-gradient(top, #DCE6F7 0%, #BDE0F0 100%);
 	background-image: -moz-linear-gradient(top, #DCE6F7 0%, #BDE0F0 100%);
@@ -84,7 +84,7 @@ li.tag:hover, li.tag.active			{
 	background-image: -webkit-linear-gradient(top, #4D93FD 0%, #2D65FC 100%);
 	background-image: linear-gradient(to bottom, #4D93FD 0%, #2D65FC 100%);
 }
-li.tag a							{ display: block; width: 100%; height: 100%; padding: 0 12px; text-decoration: inherit; color: inherit; color: #222; font-size: 13px; font-family: 'Palanquin Dark', sans-serif; font-weight: 400; border-bottom: none; }
+li.tag a							{ display: block; height: 100%; padding: 0 12px; text-decoration: inherit; color: inherit; color: #222; font-size: 13px; font-family: 'Palanquin Dark', sans-serif; font-weight: 400; border-bottom: none; }
 li.tag:hover a, li.tag.active a		{ color: #fff; text-shadow: none; }
 
 #experience							{ clear: both; }
@@ -101,7 +101,7 @@ li.tag:hover a, li.tag.active a		{ color: #fff; text-shadow: none; }
 #education							{  }
 #education ol li					{ margin-bottom: 24px; }
 #education ol li:last-child			{ margin-bottom: 0; }
-#education .institution				{ font-weight: bold; float: left; font-family: 'Palanquin Dark', sans-serif; }
+#education .institution				{ font-weight: bold; float: left; font-family: 'Palanquin Dark', sans-serif; color: #222; }
 #education .degree					{ font-weight: normal; color: #555; font-style: italic; font-size: 14px; padding-left: 4px; }
 #education .dates					{ float: right; color: #555; font-style: italic; font-size: 14px; }
 
@@ -111,15 +111,16 @@ li.tag:hover a, li.tag.active a		{ color: #fff; text-shadow: none; }
 #references .phone					{ display: block; }
 
 #projects							{ clear: both; padding-top: 36px; }
-#projects li.project				{ width: 100%; list-style: none; margin: 0 0 24px 0; padding: 10px; background: #efefef; border: 1px solid #ccc; border-radius: 4px; box-shadow: 0px 0px 3px #bbb; }
+#projects li.project				{ width: 100%; list-style: none; margin: 0 0 40px 0; padding: 10px; background: #fff; border: 1px solid #ccc; border-radius: 4px; box-shadow: 0px 0px 3px #bbb; }
 #projects li.project h2				{ float: left; font-size: 24px; font-family: 'Palanquin Dark', sans-serif; margin: 12px 0; }
-#projects li.project .link			{ float: right; margin-top: 12px; }
+#projects li.project .link			{ float: right; margin-top: 12px; font-weight: normal; }
 #projects li.project .link a		{ color: #555; text-decoration: none; }
 #projects li.project .images		{ height: 300px; overflow: hidden; border-radius: 3px; background-color: #ccc; }
 #projects li.project .images li		{ display: block; position: absolute; border-radius: 3px; border: 1px solid #ddd;}
 #projects li.project .images li img	{ display: block; width: 100%; border-radius: 3px; }
+#projects li.project .inner 		{ padding-left: 1rem; padding-right: 1rem; margin-top: 1rem; margin-bottom: 1rem; }
 #projects li.project .description	{ margin-top: 6px; }
-#projects li.project .description p	{ font-size: 14px; color: #555; margin-bottom: 1em; }
+#projects li.project .description p	{ font-size: 14px; color: #555; margin-bottom: 1em; font-weight: normal; }
 #projects li.project .description p:last-child { margin-bottom: 0; }
 #projects li.project .tags			{  }
 #projects li.project .tags .tag		{  }
@@ -127,7 +128,7 @@ li.tag:hover a, li.tag.active a		{ color: #fff; text-shadow: none; }
 
 #elsewhere 							{  }
 #elsewhere ul li 					{ font-family: 'Palanquin Dark', sans-serif; margin-bottom: 0.25rem; padding-bottom: 0.5rem; }
-#elsewhere ul li a					{  }
+#elsewhere ul li a					{ color: #222; }
 #elsewhere ul li.stack-overflow		{  }
 #elsewhere ul li.github				{  }
 #elsewhere ul li.linkedin			{  }

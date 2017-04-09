@@ -29,44 +29,46 @@ $(function()
 		var imageTransitionTime = 500;
 
 		imageContainers.each(function(i) {
-			// Hide all but the first screenshot in each group
-			$(this).children().each(function(i) {
-				if(i != 0) {
-					$(this).css({opacity: 0});
-				}
-			});
+			if($(this).children().length > 1) {
+				// Hide all but the first screenshot in each group
+				$(this).children().each(function(i) {
+					if(i != 0) {
+						$(this).css({opacity: 0});
+					}
+				});
 
-			var index = 0;
-			var timer;
-			var gracePeriodTimer;
+				var index = 0;
+				var timer;
+				var gracePeriodTimer;
 
-			// Anonymous function triggered when the container is moused over, starting the slideshow
-			$(this).mouseover(function() {
-				clearInterval(timer);
-				timer = null;
+				// Anonymous function triggered when the container is moused over, starting the slideshow
+				$(this).mouseover(function() {
+					clearInterval(timer);
+					timer = null;
 
-				var node = this;
+					var node = this;
 
-				var f = function() {
-					$($(node).children()[index]).animate({ opacity: 0 }, imageTransitionTime);
-					index = (index + 1) % $(node).children().length;
-					$($(node).children()[index]).animate({ opacity: 1 }, imageTransitionTime);
-				};
+					var f = function() {
+						$($(node).children()[index]).animate({ opacity: 0 }, imageTransitionTime);
+						index = (index + 1) % $(node).children().length;
+						$($(node).children()[index]).animate({ opacity: 1 }, imageTransitionTime);
+					};
 
-				gracePeriodTimer = setTimeout(function() {
-					f();
-					timer = setInterval(f, imageTransitionInterval);
-				}, imageGraceTime);
-			});
+					gracePeriodTimer = setTimeout(function() {
+						f();
+						timer = setInterval(f, imageTransitionInterval);
+					}, imageGraceTime);
+				});
 
-			// Anonymous function triggered on mouse out, canceling the associated slideshow
-			$(this).mouseout(function() {
-				clearTimeout(gracePeriodTimer);
-				gracePeriodTimer = null;
+				// Anonymous function triggered on mouse out, canceling the associated slideshow
+				$(this).mouseout(function() {
+					clearTimeout(gracePeriodTimer);
+					gracePeriodTimer = null;
 
-				clearInterval(timer);
-				timer = null;
-			});
+					clearInterval(timer);
+					timer = null;
+				});
+			}
 		});
 	}
 

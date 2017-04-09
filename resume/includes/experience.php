@@ -8,10 +8,7 @@ $experience = array(
 		"dates" => "May 2015 - Present",
 		"summary" => "Custom website development",
 		"roles" => array(
-			"sdfsdfsdf",
-			"sdfsdfsdf",
-			"sdfsdfsdf",
-			"sdfsdfsdf"
+			
 		)
 	),
 
@@ -47,7 +44,7 @@ $experience = array(
 		"company" => "Boxkite Media",
 		"title" => "Partner / Lead Developer",
 		"dates" => "January 2007 - June 2010",
-		"summary" => "Web application development and maintenance for various clients",
+		"summary" => "Web application development and maintenance",
 		"roles" => array(
 			"Developed and maintained proprietary CMS and PHP framework",
 			"Defined development workflow and curated development toolkit",
