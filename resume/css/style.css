@@ -102,8 +102,8 @@ li.tag:hover a, li.tag.active a		{ color: #fff; text-shadow: none; }
 #education ol li					{ margin-bottom: 24px; }
 #education ol li:last-child			{ margin-bottom: 0; }
 #education .institution				{ font-weight: bold; float: left; font-family: 'Palanquin Dark', sans-serif; color: #222; }
-#education .degree					{ font-weight: normal; color: #555; font-style: italic; font-size: 14px; padding-left: 4px; }
-#education .dates					{ float: right; color: #555; font-style: italic; font-size: 14px; }
+#education .degree					{ font-weight: normal; color: #222; font-style: italic; font-size: 14px; padding-left: 4px; font-family: 'Roboto Slab', serif; }
+#education .dates					{ float: right; color: #555; font-style: italic; font-size: 14px; font-weight: normal; }
 
 #references							{  }
 #references .name					{ display: block; }
