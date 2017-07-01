@@ -115,9 +115,12 @@ li.tag:hover a, li.tag.active a		{ color: #fff; text-shadow: none; }
 #projects li.project h2				{ float: left; font-size: 24px; font-family: 'Palanquin Dark', sans-serif; margin: 12px 0; }
 #projects li.project .link			{ float: right; margin-top: 12px; font-weight: normal; }
 #projects li.project .link a		{ color: #555; text-decoration: none; }
-#projects li.project .images		{ height: 300px; overflow: hidden; border-radius: 3px; background-color: #ccc; }
-#projects li.project .images li		{ display: block; position: absolute; border-radius: 3px; border: 1px solid #ddd;}
-#projects li.project .images li img	{ display: block; width: 100%; border-radius: 3px; }
+/*#projects li.project .images		{ height: 300px; overflow: hidden; border-radius: 3px; background-color: #ccc; }*/
+/*#projects li.project .images li		{ display: block; position: absolute; border-radius: 3px; border: 1px solid #ddd;}*/
+/*#projects li.project .images li img	{ display: block; width: 100%; border-radius: 3px; }*/
+#projects .slick-prev				{ left: 10px; z-index: 9999; }
+#projects .slick-next				{ right: 10px; z-index: 9999; }
+#projects .slick-prev:before, .slick-next:before { color: #000 !important; }
 #projects li.project .inner 		{ padding-left: 1rem; padding-right: 1rem; margin-top: 1rem; margin-bottom: 1rem; }
 #projects li.project .description	{ margin-top: 6px; }
 #projects li.project .description p	{ font-size: 14px; color: #555; margin-bottom: 1em; font-weight: normal; }

@@ -22,10 +22,9 @@
 	<link rel="stylesheet" href="<?php echo $basePath ?>/css/style.css" type="text/css" media="screen, print" />
 	<link rel="stylesheet" href="<?php echo $basePath ?>/css/print.css" type="text/css" media="<?php echo @$_GET['media'] == 'print' ? 'screen, ' :'' ?>print" />
 	<link rel="stylesheet" href="<?php echo $basePath ?>/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="<?php echo $basePath ?>/css/slick.css" />
+	<link rel="stylesheet" href="<?php echo $basePath ?>/css/slick-theme.css" />
 	<link href="https://fonts.googleapis.com/css?family=Palanquin+Dark:400,600|Roboto+Slab:400,700" rel="stylesheet">
-
-	<script type="text/javascript" src="<?php echo $basePath ?>/js/jquery-1.8.3.min.js"></script>
-	<script type="text/javascript" src="<?php echo $basePath ?>/js/master.js"></script>
 </head>
 
 <body>

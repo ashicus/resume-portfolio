@@ -8,6 +8,10 @@
 		</footer>
 	</div>
 
+	<script type="text/javascript" src="<?php echo $basePath ?>/js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="<?php echo $basePath ?>/js/slick.min.js"></script>
+	<script type="text/javascript" src="<?php echo $basePath ?>/js/master.js"></script>
+
 	<script type="text/javascript">
 	  var _gaq = _gaq || [];
 	  _gaq.push(['_setAccount', 'UA-238874-2']);

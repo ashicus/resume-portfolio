@@ -4,7 +4,7 @@
 <ul id="projects">
 <?php foreach($projects as $i => $project) { ?>
 	<li class="project">
-		<ol class="images">
+		<ol class="slider images">
 			<?php foreach($project['images'] as $image) { ?>
 				<li><img src="<?= $image ?>" alt="<?= $project['title'] ?>" /></li>
 			<?php } ?>
