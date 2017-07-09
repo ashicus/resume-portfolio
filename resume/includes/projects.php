@@ -23,7 +23,7 @@ $projects = array(
 		),
 		"description" => "
 			<p>FOX NOW is Fox Broadcasting Company's streaming platform for mobile devices and set-top boxes.</p>
-			<p>I built the marketing site from the ground up including a fully responsive experience, content driven by a remote CMS feed, Flexslider navigation, and Adobe Omniture analytics.</p>
+			<p>I built the marketing site from the ground up including a fully responsive experience, content driven by a remote CMS feed, FlexSlider-based page navigation, and Adobe Omniture analytics.</p>
 		",
 		"link" => "http://www.fox.com/foxnow",
 		"tags" => array("PHP", "HTML", "LESS", "Responsive", "JavaScript", "Photoshop")
@@ -46,13 +46,39 @@ $projects = array(
 	),
 
 	array(
+		"title" => "University of Geoegia Experiential Learning",
+		"images" => array(
+			"../images/portfolio/el_1.jpg",
+			"../images/portfolio/el_2.jpg",
+		),
+		"description" => "
+
+		",
+		"link" => "http://el.uga.edu",
+		"tags" => array("Laravel", "WordPress", "PHP", "HTML", "SASS", "Responsive", "JavaScript", "Photoshop")
+	),
+
+	array(
+		"title" => "Summit Group 401(k) Consulting",
+		"images" => array(
+			"../images/portfolio/summit_1.jpg",
+			"../images/portfolio/summit_2.jpg",
+			"../images/portfolio/summit_3.jpg",
+		),
+		"description" => "
+
+		",
+		"link" => "http://summitgroup401k.com",
+		"tags" => array( "WordPress", "PHP", "HTML", "SASS", "Responsive", "JavaScript", "Photoshop")
+	),
+
+	array(
 		"title" => "Professional Development School District Partnership",
 		"images" => array(
 			"../images/portfolio/pdsd_1.jpg",
 		),
 		"description" => "
-			<p>I provided development and maintenance for fox.com, including CMS integration, responsive design, video streaming, MVPD authentication, advertising, social integration, analytics, and user feedback.</p>
-			<p>In addition to working directly alongside the product teams at Fox and collaborating with the other developers on my team, I worked with other vendors such as Adobe, Hulu, Akamai, and FreeWheel.</p>
+			<p>A fully custom WordPress site for a collaboration between the University of Georgia and the Clarke Country School District.</p>
 		",
 		"link" => "http://pdsdpartnership.com",
 		"tags" => array("WordPress", "PHP", "HTML", "SASS", "Responsive", "JavaScript", "Photoshop")
@@ -66,8 +92,8 @@ $projects = array(
 			"../images/portfolio/stadion_2.jpg",
 		),
 		"description" => "
-			<p>I provided development and maintenance for fox.com, including CMS integration, responsive design, video streaming, MVPD authentication, advertising, social integration, analytics, and user feedback.</p>
-			<p>In addition to working directly alongside the product teams at Fox and collaborating with the other developers on my team, I worked with other vendors such as Adobe, Hulu, Akamai, and FreeWheel.</p>
+			<p>A custom website for money management firm Stadion Money.</p>
+			<p>The site is built on ExpressionEngine, with several features powered by a proprietary JSON API for providing advanced functionality.</p>
 		",
 		"link" => "http://www.stadionmoney.com",
 		"tags" => array("ExpressionEngine", "PHP", "HTML", "SASS", "Responsive", "JavaScript", "Photoshop")
@@ -80,8 +106,8 @@ $projects = array(
 			"../images/portfolio/jtoday_2.jpg",
 		),
 		"description" => "
-			<p>I provided development and maintenance for fox.com, including CMS integration, responsive design, video streaming, MVPD authentication, advertising, social integration, analytics, and user feedback.</p>
-			<p>In addition to working directly alongside the product teams at Fox and collaborating with the other developers on my team, I worked with other vendors such as Adobe, Hulu, Akamai, and FreeWheel.</p>
+			<p>Jtoday is a custom intranet application that allows Jackson EMC to keep employees up to date with the latest company news and events.</p>
+			<p>The site is built using Craft, with custom plugins for advanced functionality such as service outage counts, weather forecasts, and forum integration.</p>
 		",
 		// "link" => "http://www.stadionmoney.com",
 		"tags" => array("Craft CMS", "PHP", "HTML", "SASS", "Responsive", "JavaScript", "Photoshop")
@@ -93,8 +119,7 @@ $projects = array(
 			"../images/portfolio/ihe_1.jpg",
 		),
 		"description" => "
-			<p>I provided development and maintenance for fox.com, including CMS integration, responsive design, video streaming, MVPD authentication, advertising, social integration, analytics, and user feedback.</p>
-			<p>In addition to working directly alongside the product teams at Fox and collaborating with the other developers on my team, I worked with other vendors such as Adobe, Hulu, Akamai, and FreeWheel.</p>
+
 		",
 		"link" => "http://ihe.uga.edu",
 		"tags" => array("ExpressionEngine", "PHP", "HTML", "SASS", "Responsive", "JavaScript", "Photoshop")
@@ -106,8 +131,7 @@ $projects = array(
 			"../images/portfolio/dae_1.jpg",
 		),
 		"description" => "
-			<p>I provided development and maintenance for fox.com, including CMS integration, responsive design, video streaming, MVPD authentication, advertising, social integration, analytics, and user feedback.</p>
-			<p>In addition to working directly alongside the product teams at Fox and collaborating with the other developers on my team, I worked with other vendors such as Adobe, Hulu, Akamai, and FreeWheel.</p>
+
 		",
 		"link" => "http://dae.uga.edu",
 		"tags" => array("WordPress", "PHP", "HTML", "SASS", "Responsive", "JavaScript", "Photoshop")
@@ -119,8 +143,7 @@ $projects = array(
 			"../images/portfolio/dovetail_1.jpg",
 		),
 		"description" => "
-			<p>I provided development and maintenance for fox.com, including CMS integration, responsive design, video streaming, MVPD authentication, advertising, social integration, analytics, and user feedback.</p>
-			<p>In addition to working directly alongside the product teams at Fox and collaborating with the other developers on my team, I worked with other vendors such as Adobe, Hulu, Akamai, and FreeWheel.</p>
+
 		",
 		"link" => "http://wildwoodlubbock.com",
 		"tags" => array("WordPress", "PHP", "HTML", "SASS", "Responsive", "JavaScript", "Photoshop")
@@ -195,19 +218,6 @@ $projects = array(
 	),
 
 	array(
-		"title" => "Georgia Debate Union",
-		"images" => array(
-			"../images/portfolio/gdu_1.jpg",
-			"../images/portfolio/gdu_2.jpg",
-		),
-		"description" => "
-			<p>The Georgia Debate Union is a competitive intercollegiate policy debate team at the University of Georgia. We designed a new front-end and a suite of content management tools designed especially for debate teams at both the college and high school levels. This includes management for team members and coaches, press and alumni relations, tournament schedules, a full featured blogging and contact system, and a permission management system that allows multiple people to manage different parts of the site.</p>
-			<p>I created the CMS, implemented all page code from mockups, and worked directly with the client to formalize specifications.</p>",
-		"link" => "http://georgiadebate.org",
-		"tags" => array("PHP", "MySQL", "HTML", "CSS", "JavaScript")
-	),
-
-	array(
 		"title" => "National Debate Coaches Association",
 		"images" => array(
 			"../images/portfolio/ndca_1.jpg",
@@ -231,17 +241,5 @@ $projects = array(
 			<p>I created the CMS, implemented all page code from mockups, and worked directly with the client to formalize specifications.</p>",
 		"link" => "http://eikonic.com",
 		"tags" => array("PHP", "MySQL", "HTML", "CSS", "JavaScript")
-	),
-
-	array(
-		"title" => "Combat Focus Shooting iPhone App",
-		"images" => array(
-			"../images/portfolio/cfs_1.jpg",
-		),
-		"description" => "
-			<p>This is an app targeted at amateur and novice firearm training enthusiasts, designed to help them practice on their own by re-creating some of the drills that are taught in Rob Pincus' flagship training program.</p>
-			<p>I developed the app, created the website for the app, and helped design the API that the app uses to communicate with the server-side component.</p>",
-		"link" => "http://combatfocusapp.com",
-		"tags" => array("Objective-C", "Cocoa", "HTML", "CSS", "JavaScript")
 	),
 );

@@ -6,7 +6,9 @@
 	<h2>Expertise</h2>
 	<ol class="main-list">
 		<?php foreach($skills as $skill) { ?>
-			<li class="tag"><a href="portfolio/#<?php echo $skill ?>"><?php echo $skill ?></a></li>
+			<li class="tag">
+				<a href="javascript:;"><?php echo $skill; ?></a>
+			</li>
 		<?php } ?>
 	</ol>
 </section>
@@ -24,13 +26,18 @@
 					<?php } ?>
 					<span class="title"><?php echo $e['title'] ?></span>
 				</span>
+
 				<span class="dates"><?php echo $e['dates'] ?></span>
+
 				<p class="details">
 					<?php echo $e['summary'] ?>
 				</p>
+
 				<ul class="roles">
 					<?php foreach($e['roles'] as $role) { ?>
-						<li><?php echo $role ?></li>
+						<?php if (trim($role)) { ?>
+							<li><?php echo $role ?></li>
+						<?php } ?>
 					<?php } ?>
 				</ul>
 			</li>

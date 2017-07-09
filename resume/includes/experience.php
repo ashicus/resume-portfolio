@@ -8,7 +8,10 @@ $experience = array(
 		"dates" => "May 2015 - Present",
 		"summary" => "Custom website development",
 		"roles" => array(
-			
+			"Implemented fully custom CMS-based solutions based on leading content management systems incuding WordPress, ExpressionEngine, and Craft",
+			"Converted complex graphical designs into functional implementations using HTML5, CSS3, and JavaScript",
+			"Coordinated with art directors and clients in testing and verification of development tasks",
+			"Prepared and executed content migration plans",
 		)
 	),
 

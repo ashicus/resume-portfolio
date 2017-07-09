@@ -44,7 +44,7 @@
 
 				<p class="info">
 					<span class="label">Email</span>
-					<a id="email-link" href="#">Turn on JavaScript</a>
+					<a id="email-link">Turn on JavaScript</a>
 				</p>
 
 				<p class="info">
@@ -54,7 +54,7 @@
 
 				<div id="summary">
 					<p>
-						Full stack software engineer with 15 years of experience architecting, developing, testing, and
+						Full stack software engineer with 12 years of experience architecting, developing, testing, and
 						debugging medium to large scale web applications.
 					</p>
 				</div>
