@@ -24,7 +24,7 @@
 	<link rel="stylesheet" href="<?php echo $basePath ?>/css/font-awesome.min.css" />
 	<link rel="stylesheet" href="<?php echo $basePath ?>/css/slick.css" />
 	<link rel="stylesheet" href="<?php echo $basePath ?>/css/slick-theme.css" />
-	<link href="https://fonts.googleapis.com/css?family=Palanquin+Dark:400,600|Roboto+Slab:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Palanquin+Dark:400,600%7CRoboto+Slab:400,700" rel="stylesheet">
 </head>
 
 <body>

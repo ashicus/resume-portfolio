@@ -2,17 +2,20 @@
 
 		<footer>
 			<p>Hand coded with love by Ash White</p>
-			<p>Valid <a href="http://validator.w3.org/check?uri=referer">HTML5</a> and <a href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fashmwhite.com%2Fresume%2Fcss%2Fstyle.css">CSS</a></p>
+			<p>Valid 
+				<a target="_blank" href="http://validator.w3.org/check?uri=referer">HTML5</a> and 
+				<a target="_blank" href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fashmwhite.com%2Fresume%2Fcss%2Fstyle.css">CSS</a>
+			</p>
 			<p>2015 – <?php echo date("Y") ?></p>
 			<p><span class="fa fa-code" aria-hidden="true"></span></p>
 		</footer>
 	</div>
 
-	<script type="text/javascript" src="<?php echo $basePath ?>/js/jquery-3.2.1.min.js"></script>
-	<script type="text/javascript" src="<?php echo $basePath ?>/js/slick.min.js"></script>
-	<script type="text/javascript" src="<?php echo $basePath ?>/js/master.js"></script>
+	<script src="<?php echo $basePath ?>/js/jquery-3.2.1.min.js"></script>
+	<script src="<?php echo $basePath ?>/js/slick.min.js"></script>
+	<script src="<?php echo $basePath ?>/js/master.js"></script>
 
-	<script type="text/javascript">
+	<script>
 	  var _gaq = _gaq || [];
 	  _gaq.push(['_setAccount', 'UA-238874-2']);
 	  _gaq.push(['_setDomainName', 'ashmwhite.com']);
