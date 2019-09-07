@@ -1,4 +1,4 @@
 <?php
 
-header("Location: resume");
+header( 'Location: resume' );
 die();

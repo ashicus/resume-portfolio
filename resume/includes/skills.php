@@ -1,15 +1,16 @@
 <?php
 
-$skills = array(
+$skills = [
 	"PHP",
-	"MySQL",
 	"HTML5",
 	"JavaScript",
 	"CSS3",
 	"Sass / Less",
+	"SQL",
 	"Node.js",
 	"Responsive Design",
 	"CMS Development",
-	"Adobe CC",
 	"UNIX / Linux",
-);
+	"Git / SVN",
+	"Adobe CC",
+];

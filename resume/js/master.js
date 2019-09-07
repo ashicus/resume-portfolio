@@ -23,9 +23,10 @@ $(function()
 
 	function setupSlideshows()
 	{
-		$(".slider").slick({
-			infinite: false,
-			dots: true
+		$('.slider').slick({
+			infinite: true,
+			dots: true,
+			draggable: true
 		});
 	}
 
