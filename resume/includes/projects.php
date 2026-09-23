@@ -36,12 +36,26 @@ $projects = [
 		'description' => '
 			<p>theCHIVE is the #14 ranked humor website in the world, with 3.5 million daily visitors and 30-40 articles published per day.</p>
 			<p>
-				I manage advertising integrations with partners such as Google DFP, Prebid, and Ascendeum, as well as ensuring
+				I managed advertising integrations with partners such as Google DFP, Prebid, and Ascendeum, as well as ensuring
 				cohesive, responsive styling across various device types. 
 			</p>
 		',
 		'link' => 'https://thechive.com',
 		'tags' => [ 'PHP', 'WordPress', 'React', 'Sass', 'Responsive', 'JavaScript' ]
+	],
+	
+	[
+		'title' => 'College Charity Showdown',
+		'images' => [
+			'images/portfolio/ccs-1.jpg',
+			'images/portfolio/ccs-2.jpg',
+		],
+		'description' => '
+			<p>College Charity Showdown allows visitors to support their favorite college football team by donating to charitable causes.</p>
+			<p>The project has a React-powered front-end, with a headless WordPress backend.</p>
+		',
+		'link' => 'https://collegecharityshowdown.com/',
+		'tags' => [ 'WordPress', 'React', 'PCSS', 'Responsive', 'JavaScript' ]
 	],
 
 	[
@@ -86,6 +100,32 @@ $projects = [
 		',
 		'link' => 'https://www.nbc.com/video/',
 		'tags' => [ 'ActionScript', 'Flash', 'JavaScript', 'HTML', 'CSS' ]
+	],
+
+	[
+		'title' => 'Athens Symphony Orchestra',
+		'images' => [
+			'images/portfolio/aso-1.jpg',
+			'images/portfolio/aso-2.jpg',
+			'images/portfolio/aso-3.jpg',
+		],
+		'description' => '
+
+		',
+		'link' => 'http://athenssymphony.org/',
+		'tags' => [ 'WordPress', 'PHP', 'HTML', 'SASS', 'Responsive', 'JavaScript', 'Photoshop' ]
+	],
+
+	[
+		'title' => 'Green Day',
+		'images' => [
+			'images/portfolio/gd-1.jpg',
+		],
+		'description' => '
+
+		',
+		'link' => 'https://greenday.com/',
+		'tags' => [ 'CakePHP', 'HTML', 'JavaScript', 'Photoshop' ]
 	],
 
 	[

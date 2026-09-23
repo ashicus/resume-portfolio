@@ -2,10 +2,28 @@
 
 $experience = [
 	[
+		'company' => 'Foreign Policy',
+		'company_link' => 'https://foreignpolicy.com/',
+		'title' => 'Senior Developer',
+		'dates' => 'February 2021 - Present',
+		'summary' => '',
+		'roles' => [
+		],
+	],
+	[
+		'company' => 'XWP',
+		'company_link' => 'https://xwp.co/',
+		'title' => 'Engineer',
+		'dates' => 'May 2020 - February 2021',
+		'summary' => '',
+		'roles' => [
+		],
+	],
+	[
 		'company' => 'Chive Media Group',
 		'company_link' => 'https://www.chivemediagroup.com/',
 		'title' => 'Engineer <span>(via X-Team)</span>',
-		'dates' => 'July 2018 - Present',
+		'dates' => 'July 2018 - May 2020',
 		'summary' => 'Development and maintenance for theCHIVE',
 		'roles' => [
 			'Manage advertising integrations with partners such as Google DFP, Prebid, and Ascendeum',
