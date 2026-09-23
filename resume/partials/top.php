@@ -55,7 +55,7 @@
 
 				<div id="summary">
 					<p>
-						Full stack software engineer with 15 years of experience architecting, <br />
+						Full stack software engineer with 20 years of experience architecting, <br />
 						developing, testing, and debugging medium to large scale web applications.
 					</p>
 				</div>
