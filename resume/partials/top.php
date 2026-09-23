@@ -15,7 +15,7 @@
 	<meta charset=utf-8 />
 	<meta name="author" content="Ash White" />
 
-	<title>Ash M. White | <?php echo ( $page_title ? $page_title : 'Software Engineer in Athens, GA' ); ?></title>
+	<title>Ash M. White | <?php echo ( isset( $page_title ) ? $page_title : 'Software Engineer in Athens, GA' ); ?></title>
 
 	<meta name="description" content="Ash White is a software engineer located in Athens, GA" />
 
